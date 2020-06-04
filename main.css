@@ -1,4 +1,21 @@
 /*Start global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'roboto',sans-serif;
+    color: #eee;
+}
+body{
+    width: 100px;
+    height: 100px;
+    background: url("images/sitebg.jpg") no-repeat center fixed;
+    background-size: cover;
+
+}
 /*End global*/
 
 /*Start reusable*/
