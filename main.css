@@ -42,6 +42,7 @@ header{
     height: 100vh;
     position: fixed;
     top: -100vh;
+    z-index: 50;
     background-color: #16162d;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -88,7 +89,7 @@ li{
     transition: transform 650ms ease-out;
 }
 .menu-toggler.open{
-    transform: rotate(-450deg);
+    transform: rotate(-45deg);
 }
 .bar{
     background: linear-gradient(to right,#ffe838,#fd57bf);
@@ -102,9 +103,9 @@ li{
 }
 .bar.start{
     transform-origin: right;
-    transition: transform 650ms cubic-bezier(0.54,-0.81,0.57,0.57);
+    transition: transform 65ms cubic-bezier(0.54,-0.81,0.57,0.57);
 }
-.open.bar.start{
+.open .bar.start{
     transform: rotate(-450deg) translateX(.8rem);
 }
     
@@ -114,8 +115,31 @@ li{
     transform-origin: left;
     transition: transform 650ms cubic-bezier(0.54,-0.81,0.57,0.57);
 }
-.open.bar.end{
+.open .bar.end{
     transform: rotate(-450deg) translateX(-.8rem);
+}
+.landing-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.landing-text h1{
+    font-size: 20rem;
+    font-family: 'The Historia Demo',sans-serif;
+    background: linear-gradient(to top,#ffe838,#fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    user-select: none;
+
+}
+.landing-text h6{
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /*End header*/
